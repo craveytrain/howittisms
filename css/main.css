@@ -1,0 +1,68 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#photo {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 960px;
+	height: 600px;
+	background: url('../../img/howitt.jpg') top left no-repeat;
+}
+
+.talking {
+	animation: jibba-jabba .2s steps(2) infinite;
+}
+
+@keyframes jibba-jabba {
+	0% {
+  		background-position: 0 0;
+  	}
+	100% {
+		background-position: 0 -1200px;
+	}
+}
+
+#speak {
+	position: absolute;
+	top: 400px;
+	right: 200px;
+	font-size: 4em;
+	padding: 20px 40px;
+	background: rgb(76, 47, 81);
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	box-shadow:
+		-8px -8px 0 rgb(176, 50, 51),
+		-7px -7px 0 rgb(176, 50, 51),
+		-6px -6px 0 rgb(176, 50, 51),
+		-5px -5px 0 rgb(176, 50, 51),
+		-4px -4px 0 rgb(176, 50, 51),
+		-3px -3px 0 rgb(176, 50, 51),
+		-2px -2px 0 rgb(176, 50, 51),
+		-1px -1px 0 rgb(176, 50, 51);
+}
+
+#speak:hover {
+	top: 398px;
+	right: 202px;
+	box-shadow:
+		-6px -6px 0 rgb(176, 50, 51),
+		-5px -5px 0 rgb(176, 50, 51),
+		-4px -4px 0 rgb(176, 50, 51),
+		-3px -3px 0 rgb(176, 50, 51),
+		-2px -2px 0 rgb(176, 50, 51),
+		-1px -1px 0 rgb(176, 50, 51);
+}
+
+#speak:active {
+	top: 392px;
+	right: 208px;
+	box-shadow: none;
+}

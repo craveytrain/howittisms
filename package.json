@@ -1,0 +1,25 @@
+{
+  "name": "howittisms",
+  "version": "0.0.0",
+  "description": "Get your fix o' Howit",
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "browserify": "~3.39.0",
+    "vinyl-source-stream": "~0.1.1",
+    "gulp-livereload": "~1.2.0",
+    "connect": "~2.14.4",
+    "gulp-notify": "~1.2.5",
+    "gulp-clean": "~0.2.4",
+    "gulp-autoprefixer": "0.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/craveytrain/howittisms.git"
+  },
+  "author": "Mike Cravey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craveytrain/howittisms/issues"
+  },
+  "homepage": "https://github.com/craveytrain/howittisms"
+}
