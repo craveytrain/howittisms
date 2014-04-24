@@ -8,9 +8,8 @@ html, body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	width: 960px;
 	height: 600px;
-	background: url('../../img/howitt.jpg') top left no-repeat;
+	background: url('../../img/howitt.jpg') 50% 0 no-repeat;
 }
 
 .talking {
@@ -19,10 +18,10 @@ html, body {
 
 @keyframes jibba-jabba {
 	0% {
-  		background-position: 0 0;
+  		background-position: 50% 0;
   	}
 	100% {
-		background-position: 0 -1200px;
+		background-position: 50% -1200px;
 	}
 }
 
