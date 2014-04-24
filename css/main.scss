@@ -25,12 +25,15 @@ html, body {
 	}
 }
 
+$right-pos: 50px;
+$larger-right-pos: 200px;
+
 #speak {
 	position: absolute;
 	top: 400px;
-	right: 200px;
-	font-size: 4em;
-	padding: 20px 40px;
+	right: $right-pos;
+	font-size: 2em;
+	padding: 5px 10px;
 	background: rgb(76, 47, 81);
 	color: white;
 	border: none;
@@ -46,11 +49,25 @@ html, body {
 		-3px -3px 0 rgb(176, 50, 51),
 		-2px -2px 0 rgb(176, 50, 51),
 		-1px -1px 0 rgb(176, 50, 51);
+
+	@media screen and (min-width: 500px) {
+		padding: 10px 20px;
+		font-size: 3em;
+	}
+
+	@media screen and (min-width: 600px) {
+		padding: 20px 40px;
+		font-size: 4em;
+	}
+
+	@media screen and (min-width: 980px) {
+		right: $larger-right-pos;
+	}
 }
 
 #speak:hover {
 	top: 398px;
-	right: 202px;
+	right: $right-pos + 2;
 	box-shadow:
 		-6px -6px 0 rgb(176, 50, 51),
 		-5px -5px 0 rgb(176, 50, 51),
@@ -58,10 +75,17 @@ html, body {
 		-3px -3px 0 rgb(176, 50, 51),
 		-2px -2px 0 rgb(176, 50, 51),
 		-1px -1px 0 rgb(176, 50, 51);
+
+	@media screen and (min-width: 980px) {
+		right: $larger-right-pos + 2;
+	}
 }
 
-#speak:active {
+#speak.active {
 	top: 392px;
-	right: 208px;
+	right: $right-pos + 8;
 	box-shadow: none;
+	@media screen and (min-width: 980px) {
+		right: $larger-right-pos + 8;
+	}
 }

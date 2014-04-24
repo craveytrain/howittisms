@@ -1,94 +1,73 @@
 html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
+  height: 100%;
+  margin: 0;
+  padding: 0; }
 
 #photo {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	height: 600px;
-	background: url('../../img/howitt.jpg') 50% 0 no-repeat;
-}
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  background: url('../../img/howitt.jpg') 50% 0 no-repeat; }
 
 .talking {
-	-webkit-animation: jibba-jabba .2s steps(2) infinite;
-	animation: jibba-jabba .2s steps(2) infinite;
-}
+  -webkit-animation: jibba-jabba 0.2s steps(2) infinite;
+  animation: jibba-jabba 0.2s steps(2) infinite; }
 
 @-webkit-keyframes jibba-jabba {
-	0% {
-  		background-position: 50% 0;
-  	}
-	100% {
-		background-position: 50% -1200px;
-	}
-}
+  0% {
+    background-position: 50% 0; }
+
+  100% {
+    background-position: 50% -1200px; } }
 
 @keyframes jibba-jabba {
-	0% {
-  		background-position: 50% 0;
-  	}
-	100% {
-		background-position: 50% -1200px;
-	}
-}
+  0% {
+    background-position: 50% 0; }
+
+  100% {
+    background-position: 50% -1200px; } }
 
 #speak {
-	position: absolute;
-	top: 400px;
-	right: 200px;
-	font-size: 4em;
-	padding: 20px 40px;
-	background: rgb(76, 47, 81);
-	color: white;
-	border: none;
-	text-transform: uppercase;
-	outline: none;
-	cursor: pointer;
-	-webkit-box-shadow:
-		-8px -8px 0 rgb(176, 50, 51),
-		-7px -7px 0 rgb(176, 50, 51),
-		-6px -6px 0 rgb(176, 50, 51),
-		-5px -5px 0 rgb(176, 50, 51),
-		-4px -4px 0 rgb(176, 50, 51),
-		-3px -3px 0 rgb(176, 50, 51),
-		-2px -2px 0 rgb(176, 50, 51),
-		-1px -1px 0 rgb(176, 50, 51);
-	box-shadow:
-		-8px -8px 0 rgb(176, 50, 51),
-		-7px -7px 0 rgb(176, 50, 51),
-		-6px -6px 0 rgb(176, 50, 51),
-		-5px -5px 0 rgb(176, 50, 51),
-		-4px -4px 0 rgb(176, 50, 51),
-		-3px -3px 0 rgb(176, 50, 51),
-		-2px -2px 0 rgb(176, 50, 51),
-		-1px -1px 0 rgb(176, 50, 51);
-}
+  position: absolute;
+  top: 400px;
+  right: 50px;
+  font-size: 2em;
+  padding: 5px 10px;
+  background: #4c2f51;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: -8px -8px 0 #b03233, -7px -7px 0 #b03233, -6px -6px 0 #b03233, -5px -5px 0 #b03233, -4px -4px 0 #b03233, -3px -3px 0 #b03233, -2px -2px 0 #b03233, -1px -1px 0 #b03233;
+  box-shadow: -8px -8px 0 #b03233, -7px -7px 0 #b03233, -6px -6px 0 #b03233, -5px -5px 0 #b03233, -4px -4px 0 #b03233, -3px -3px 0 #b03233, -2px -2px 0 #b03233, -1px -1px 0 #b03233; }
+  @media screen and (min-width: 500px) {
+    #speak {
+      padding: 10px 20px;
+      font-size: 3em; } }
+  @media screen and (min-width: 600px) {
+    #speak {
+      padding: 20px 40px;
+      font-size: 4em; } }
+  @media screen and (min-width: 980px) {
+    #speak {
+      right: 200px; } }
 
 #speak:hover {
-	top: 398px;
-	right: 202px;
-	-webkit-box-shadow:
-		-6px -6px 0 rgb(176, 50, 51),
-		-5px -5px 0 rgb(176, 50, 51),
-		-4px -4px 0 rgb(176, 50, 51),
-		-3px -3px 0 rgb(176, 50, 51),
-		-2px -2px 0 rgb(176, 50, 51),
-		-1px -1px 0 rgb(176, 50, 51);
-	box-shadow:
-		-6px -6px 0 rgb(176, 50, 51),
-		-5px -5px 0 rgb(176, 50, 51),
-		-4px -4px 0 rgb(176, 50, 51),
-		-3px -3px 0 rgb(176, 50, 51),
-		-2px -2px 0 rgb(176, 50, 51),
-		-1px -1px 0 rgb(176, 50, 51);
-}
+  top: 398px;
+  right: 52px;
+  -webkit-box-shadow: -6px -6px 0 #b03233, -5px -5px 0 #b03233, -4px -4px 0 #b03233, -3px -3px 0 #b03233, -2px -2px 0 #b03233, -1px -1px 0 #b03233;
+  box-shadow: -6px -6px 0 #b03233, -5px -5px 0 #b03233, -4px -4px 0 #b03233, -3px -3px 0 #b03233, -2px -2px 0 #b03233, -1px -1px 0 #b03233; }
+  @media screen and (min-width: 980px) {
+    #speak:hover {
+      right: 202px; } }
 
-#speak:active {
-	top: 392px;
-	right: 208px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
+#speak.active {
+  top: 392px;
+  right: 58px;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+  @media screen and (min-width: 980px) {
+    #speak.active {
+      right: 208px; } }

@@ -9,6 +9,7 @@ function play() {
 if ('speechSynthesis' in window) {
 	var inspirationalMessage = new SpeechSynthesisUtterance();
 	var photo = document.getElementById('photo');
+	var button = document.getElementById('speak');
 
 	// wait on voices loaded before changing it
 	speechSynthesis.onvoiceschanged = function() {
@@ -17,12 +18,14 @@ if ('speechSynthesis' in window) {
 
 	inspirationalMessage.onstart = function() {
 		photo.classList.add('talking');
+		button.classList.add('active');
 	};
 
 	inspirationalMessage.onend = function() {
 		photo.classList.remove('talking');
+		button.classList.remove('active');
 	};
 
-	document.getElementById('speak').addEventListener('click', play, false);
+	button.addEventListener('click', play, false);
 
 }
