@@ -4,6 +4,7 @@ var voices = require('./voices');
 function play() {
 	inspirationalMessage.text = messages.get();
 	speechSynthesis.speak(inspirationalMessage);
+	ga('send', 'event', 'message', 'play', inspirationalMessage.text);
 }
 
 if ('speechSynthesis' in window) {
