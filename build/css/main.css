@@ -71,3 +71,9 @@ html, body {
   @media screen and (min-width: 980px) {
     #speak.active {
       right: 208px; } }
+
+.gh-banner img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0; }

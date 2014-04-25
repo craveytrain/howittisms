@@ -89,3 +89,10 @@ $larger-right-pos: 200px;
 		right: $larger-right-pos + 8;
 	}
 }
+
+.gh-banner img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
