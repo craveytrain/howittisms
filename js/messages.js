@@ -38,7 +38,8 @@ var phrases = [
 "land the plane",
 "there is an element of truth in every joke",
 "the game (in the game theory sense)",
-"At Harvard, …"
+"At Harvard, …",
+"Cravey, you're fired"
 ];
 
 exports.get = function() {
